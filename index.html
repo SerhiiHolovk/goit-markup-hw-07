@@ -17,19 +17,19 @@
 
 <body>
   <!--header-->
-  <header class="header-studio">
+  <header class="header">
     <div class="container">
-          <a class="logo link" href="">Web<span class="logo-studio-header">Studio</span> </a>
-          <nav class="nav">
-            <ul class="nav-list list">
-              <li><a class="nav link" href="./index.html">Студия</a></li>
-              <li><a class="nav link" href="./portfolio.html">Портфолио</a></li>
-              <li><a class="nav link" href="">Контакты</a></li>
+          <a class="logo" href="">Web<span class="logo-studio-header">Studio</span> </a>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a class="nav-link link" href="./index.html">Студия</a></li>
+              <li class="nav-list-item"><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
+              <li class="nav-list-item"><a class="nav-link link" href="">Контакты</a></li>
             </ul>
           </nav>
-          <ul class="contacts list">
-            <li><a class="link-mail link" href="mailto:info@devstuio.com">info@devstuio.com</a></li>
-            <li><a class="link-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <ul class="contacts">
+            <li><a class="link-mail" href="mailto:info@devstuio.com">info@devstuio.com</a></li>
+            <li><a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
     </div>
   </header>
@@ -37,9 +37,8 @@
 
   <!--Main-->
   <main>
-    
     <!--effective solution-->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
         <h1 class="hero-title">Эффективные решения
           <br>для вашего бизнеса
@@ -49,10 +48,10 @@
       </section>
     
         <!--Features (hide in style.css)-->
-    <section>
+    <section class="section">
       <div class="container">
           <h2 class="visually-hidden">Features</h2>
-          <ul class="features list">
+          <ul class="features">
             <li class="features-item">
               <h3 class="features-title">Внимание к деталям</h3>
               <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -74,10 +73,10 @@
     </section>
 
     <!--our works-->
-    <section class="our-works-section">
+    <section class="our-works-section section">
         <div class="container">
           <h2 class="our-works-title">Чем мы занимаемся</h2>
-          <ul class="our-works-list list">
+          <ul class="our-works-list">
             <li class="our-works"><img src="./images/box1.jpg" width="370" height="294" alt="coding"></li>
             <li class="our-works"><img src="./images/box2.jpg" width="370" height="294" alt="dev-design"></li>
             <li class="our-works"><img src="./images/box3.jpg" width="370" height="294" alt="color-palitra"></li>
@@ -86,33 +85,41 @@
     </section>
 
     <!--our team -->
-    <section class="our-team-section">
+    <section class="our-team-section section">
       <div class="container">
         <h2 class="our-team">Наша команда</h2>
-        <ul class="team-list list">
+        <ul class="team-list">
           <!--Product Designer-->
           <li class="team-item">
             <img class="team-img" src="./images/img.jpg" width="270" height="260" alt="Product Designer">
-            <h3 class="team-title">Игорь Демьяненко</h3>
-            <p class="team-text">Product Designer</p>
+            <div class="team-description">
+              <h3 class="team-title">Игорь Демьяненко</h3>
+              <p class="team-text">Product Designer</p>
+            </div>
           </li>
           <!--Frontend Developer-->
           <li class="team-item">
             <img class="team-img" src="./images/img1.jpg" width="270" height="260" alt="Frontend Developer">
-            <h3 class="team-title">Ольга Репина</h3>
-            <p class="team-text">Frontend Developer</p>
+            <div class="team-description">
+              <h3 class="team-title">Ольга Репина</h3>
+              <p class="team-text">Frontend Developer</p>
+            </div>
           </li>
           <!--Marketing-->
           <li class="team-item">
             <img class="team-img" src="./images/img2.jpg" width="270" height="260" alt="Marketing">
-            <h3 class="team-title">Николай Тарасов</h3>
-            <p class="team-text">Marketing</p>
+            <div class="team-description">
+              <h3 class="team-title">Николай Тарасов</h3>
+              <p class="team-text">Marketing</p>
+            </div>
           </li>
           <!--UI Designer-->
           <li class="team-item">
             <img class="team-img" src="./images/img3.jpg" width="270" height="260" alt="UI Designer">
-            <h3 class="team-title">Михаил Ермаков</h3>
-            <p class="team-text">UI Designer</p>
+            <div class="team-description">
+              <h3 class="team-title">Михаил Ермаков</h3>
+              <p class="team-text">UI Designer</p>
+            </div>
           </li>
         </ul>
     </div>
@@ -122,19 +129,19 @@
   <!--footer-->
   <footer class="footer">
     <div class="container">
-      <a href="" class="footer-logo link">Web<span class="logo-studio-footer">Studio</span> </a>
+      <a href="" class="footer-logo">Web<span class="logo-studio-footer">Studio</span> </a>
       <address class="address">
-        <ul class="footer-address list">
+        <ul class="footer-address">
           <li>
-            <a class="link-googlemaps link"
+            <a class="link-googlemaps"
               href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+2,+Киев,+02000/@50.4378622,30.524588,18z/data=!4m5!3m4!1s0x40d4cf01cf686589:0x1debb33ce8d40a66!8m2!3d50.4380034!4d30.5252958?hl=ua"
               >г.Киев,пр-т Леси Украинки,2б</a>
           </li>
           <li>
-            <a class="link-contacts-footer link" href="mailto:info@devstuio.com">info@devstuio.com</a>
+            <a class="link-contacts-footer" href="mailto:info@devstuio.com">info@devstuio.com</a>
           </li>
           <li>
-            <a class="link-contacts-footer link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link-contacts-footer" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
