@@ -122,6 +122,15 @@ ul {
   margin-left: auto;
 }
 
+.link-mail::before{
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../images/SVG/envelope.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 .link-mail {
   font-weight: 500;
   line-height: 1.14;
@@ -140,6 +149,14 @@ ul {
   color: var(--link-contacts-color);
   margin-left: 50px;
 }
+.link-tel::before{
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-color: #000;
+  background-image: url("../images/symbol-defs.svg#icon-smartphone");
+}
 .link-tel:hover,
 .link-tel:focus {
   color: var(--hover-focus-color);
@@ -156,6 +173,15 @@ ul {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+     url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  
+
 }
 
 .hero-title {
@@ -168,6 +194,7 @@ ul {
   color: #ffffff;
 
   margin-bottom: 30px;
+  
 }
 
 .button-order {
