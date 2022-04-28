@@ -28,8 +28,18 @@
             </ul>
           </nav>
           <ul class="contacts">
-            <li><a class="link-mail" href="mailto:info@devstuio.com">info@devstuio.com</a></li>
-            <li><a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contacts-list">
+              <svg class="contacts-icon envelope" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <a class="link-mail" href="mailto:info@devstuio.com">info@devstuio.com</a>
+            </li>
+            <li class="contacts-list">
+              <svg class="contacts-icon tel" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
     </div>
   </header>
@@ -48,82 +58,162 @@
       </section>
     
         <!--Features (hide in style.css)-->
-    <section class="section">
-      <div class="container">
-          <h2 class="visually-hidden">Features</h2>
-          <ul class="features">
-            <li class="features-item">
-              <h3 class="features-title">Внимание к деталям</h3>
-              <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+      <section class="section">
+        <div class="container">
+            <h2 class="visually-hidden">Features</h2>
+            <ul class="features">
+              <li class="features-item">
+                <svg class="features-icon" width="270" height="120">
+                  <use href="./images/icons.svg#icon-antena"></use>
+                </svg>
+                <h3 class="features-title">Внимание к деталям</h3>
+                <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              </li>
+              <li class="features-item">
+                <svg class="features-icon" width="270" height="120">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+                <h3 class="features-title">Пунктуальность</h3>
+                <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              </li>
+              <li class="features-item">
+                <svg class="features-icon" width="270" height="120">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+                <h3 class="features-title">Планирование</h3>
+                <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              </li>
+              <li class="features-item">
+                <svg class="features-icon" width="270" height="120">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+                <h3 class="features-title">Современные технологии</h3>
+                <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              </li>
+            </ul>
+        </div>  
+      </section>
+
+      <!--our works-->
+      <section class="our-works-section section">
+          <div class="container">
+            <h2 class="our-works-title">Чем мы занимаемся</h2>
+            <ul class="our-works-list">
+              <li class="our-works"><img src="./images/box1.jpg" width="370" height="294" alt="coding"></li>
+              <li class="our-works"><img src="./images/box2.jpg" width="370" height="294" alt="dev-design"></li>
+              <li class="our-works"><img src="./images/box3.jpg" width="370" height="294" alt="color-palitra"></li>
+            </ul> 
+          </div>
+      </section>
+
+      <!--our team -->
+      <section class="our-team-section section">
+        <div class="container">
+          <h2 class="our-team">Наша команда</h2>
+          <ul class="team-list">
+            <!--Product Designer-->
+            <li class="team-item">
+              <img class="team-img" src="./images/img.jpg" width="270" height="260" alt="Product Designer">
+              <div class="team-description">
+                <h3 class="team-title">Игорь Демьяненко</h3>
+                <p class="team-text">Product Designer</p>
+                <ul class="social-links">
+                  <li class="social-list">
+                      <a href="" class="team-soc-icon">
+                        <svg class="social-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                  </li>
+                  <li class="social-list">
+                     <a href="" class="team-soc-icon">
+                        <svg class="social-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                  </li>
+                  <li class="social-list">
+                     <a href="" class="team-soc-icon">
+                        <svg class="social-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                  </li>
+                  <li class="social-list">
+                     <a href="" class="team-soc-icon">
+                        <svg class="social-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="features-item">
-              <h3 class="features-title">Пунктуальность</h3>
-              <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            <!--Frontend Developer-->
+            <li class="team-item">
+              <img class="team-img" src="./images/img1.jpg" width="270" height="260" alt="Frontend Developer">
+              <div class="team-description">
+                <h3 class="team-title">Ольга Репина</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="features-item">
-              <h3 class="features-title">Планирование</h3>
-              <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            <!--Marketing-->
+            <li class="team-item">
+              <img class="team-img" src="./images/img2.jpg" width="270" height="260" alt="Marketing">
+              <div class="team-description">
+                <h3 class="team-title">Николай Тарасов</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
-            <li class="features-item">
-              <h3 class="features-title">Современные технологии</h3>
-              <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <!--UI Designer-->
+            <li class="team-item">
+              <img class="team-img" src="./images/img3.jpg" width="270" height="260" alt="UI Designer">
+              <div class="team-description">
+                <h3 class="team-title">Михаил Ермаков</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
-      </div>  
-    </section>
-
-    <!--our works-->
-    <section class="our-works-section section">
-        <div class="container">
-          <h2 class="our-works-title">Чем мы занимаемся</h2>
-          <ul class="our-works-list">
-            <li class="our-works"><img src="./images/box1.jpg" width="370" height="294" alt="coding"></li>
-            <li class="our-works"><img src="./images/box2.jpg" width="370" height="294" alt="dev-design"></li>
-            <li class="our-works"><img src="./images/box3.jpg" width="370" height="294" alt="color-palitra"></li>
-          </ul> 
+      </div>
+      </section>
+      <!-- Clients -->
+      <section class="clients">
+        <div class="container">              
+            <h2 class="clients-title">Постоянные клиенты</h2>
+            <ul class="clients-list">
+              <li class="clients-item">
+                <svg class="client-logo" width="170" height="92">
+                  <use href="./images/icons.svg#icon-ya-co"></use>
+                </svg>
+              </li>
+              <li class="clients-item">
+                <svg class="client-logo" width="170" height="92">
+                  <use href="./images/icons.svg#icon-tagline"></use>
+                </svg>
+              </li>
+              <li class="clients-item">
+                <svg class="client-logo" width="170" height="92">
+                  <use href="./images/icons.svg#icon-company"></use>
+                </svg>
+              </li>
+              <li class="clients-item">
+                <svg class="client-logo" width="170" height="92">
+                  <use href="./images/icons.svg#icon-fosterpeters"></use>
+                </svg>
+              </li>
+              <li class="clients-item">
+                <svg class="client-logo" width="170" height="92">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </li>
+              <li class="clients-item">
+                <svg class="client-logo" width="170" height="92">
+                  <use href="./images/icons.svg#icon-comp-tagline"></use>
+                </svg>
+              </li>
+            </ul>
         </div>
-    </section>
-
-    <!--our team -->
-    <section class="our-team-section section">
-      <div class="container">
-        <h2 class="our-team">Наша команда</h2>
-        <ul class="team-list">
-          <!--Product Designer-->
-          <li class="team-item">
-            <img class="team-img" src="./images/img.jpg" width="270" height="260" alt="Product Designer">
-            <div class="team-description">
-              <h3 class="team-title">Игорь Демьяненко</h3>
-              <p class="team-text">Product Designer</p>
-            </div>
-          </li>
-          <!--Frontend Developer-->
-          <li class="team-item">
-            <img class="team-img" src="./images/img1.jpg" width="270" height="260" alt="Frontend Developer">
-            <div class="team-description">
-              <h3 class="team-title">Ольга Репина</h3>
-              <p class="team-text">Frontend Developer</p>
-            </div>
-          </li>
-          <!--Marketing-->
-          <li class="team-item">
-            <img class="team-img" src="./images/img2.jpg" width="270" height="260" alt="Marketing">
-            <div class="team-description">
-              <h3 class="team-title">Николай Тарасов</h3>
-              <p class="team-text">Marketing</p>
-            </div>
-          </li>
-          <!--UI Designer-->
-          <li class="team-item">
-            <img class="team-img" src="./images/img3.jpg" width="270" height="260" alt="UI Designer">
-            <div class="team-description">
-              <h3 class="team-title">Михаил Ермаков</h3>
-              <p class="team-text">UI Designer</p>
-            </div>
-          </li>
-        </ul>
-    </div>
-    </section>
+      </section>
   </main>
 
   <!--footer-->
