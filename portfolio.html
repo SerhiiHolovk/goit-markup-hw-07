@@ -28,15 +28,19 @@
       </nav>
       <ul class="contacts">
         <li class="contacts-list">
-          <svg class="contacts-icon" width="16" height="12">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>
-          <a class="link-mail" href="mailto:info@devstuio.com">info@devstuio.com</a></li>
+          <a class="link-mail" href="mailto:info@devstuio.com">
+            <svg class="contacts-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstuio.com</a
+            >
+        </li>
         <li class="contacts-list">
-          <svg width="10" height="16">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>
-          <a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <a class="link-tel" href="tel:+380961111111">
+            <svg class="contacts-icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -128,22 +132,67 @@
   <!--footer-->
   <footer class="footer">
     <div class="container">
-      <a href="" class="footer-logo link">Web<span class="logo-studio-footer">Studio</span> </a>
-      <address class="address">
-        <ul class="footer-address list">
-          <li>
-            <a class="link-googlemaps link"
-              href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+2,+Киев,+02000/@50.4378622,30.524588,18z/data=!4m5!3m4!1s0x40d4cf01cf686589:0x1debb33ce8d40a66!8m2!3d50.4380034!4d30.5252958?hl=ua">г.Киев,пр-т
-              Леси Украинки,2б</a>
-          </li>
-          <li>
-            <a class="link-contacts-footer link" href="mailto:info@devstuio.com">info@devstuio.com</a>
-          </li>
-          <li>
-            <a class="link-contacts-footer link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container-footer">
+        <div class="Logo-adress">
+          <a href="" class="footer-logo"
+            >Web<span class="logo-studio-footer">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="footer-address">
+              <li>
+                <a
+                  class="link-googlemaps"
+                  href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+2,+Киев,+02000/@50.4378622,30.524588,18z/data=!4m5!3m4!1s0x40d4cf01cf686589:0x1debb33ce8d40a66!8m2!3d50.4380034!4d30.5252958?hl=ua"
+                  >г.Киев,пр-т Леси Украинки,2б</a
+                >
+              </li>
+              <li>
+                <a class="link-contacts-footer" href="mailto:info@devstuio.com"
+                  >info@devstuio.com</a
+                >
+              </li>
+              <li>
+                <a class="link-contacts-footer" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="welcome-soc">
+          <h3 class="welcome">Присоединяйтесь</h3>
+          <ul class="social-links social-links-footer">
+            <li class="social-list">
+              <a href="https://instagram.com" class="team-soc-icon">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="https://twitter.com/?lang=uk" class="team-soc-icon">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="https://facebook.com" class="team-soc-icon">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="https://www.linkedin.com" class="team-soc-icon">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>  
     </div>
   </footer>
 </body>
