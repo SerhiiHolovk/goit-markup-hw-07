@@ -126,14 +126,16 @@ ul {
 .contacts-list{
   margin-right: 50px;
 }
+.contacts-icon{
+  fill: currentColor;
+  margin-right: 10px;
+}
 .contacts-list:hover,
 .contacts-list:focus{
   color: var(--hover-focus-color);  
   fill: var(--hover-focus-color);
 }
-.contacts-icon{
-  margin-right: 10px;
-}
+
 
 .link-mail{
   font-weight: 500;
@@ -349,8 +351,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #AFB1B8;
+}
+.team-soc-icon:hover{
   fill: #fff;
-
+  background-color: var(--hover-focus-color);
 }
 .social-links{
   display: flex;
@@ -367,6 +372,7 @@ ul {
 /* =====================Clients============== */
 .clients{
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .clients-title{
   text-align: center;
@@ -395,6 +401,9 @@ ul {
   background-color: var(--footer-background);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.container-footer{
+  display: flex;
 }
 .footer-logo {
   display: block;
@@ -435,7 +444,21 @@ ul {
 .link-contacts-footer:focus {
   color: var(--hover-focus-color);
 }
-
+.welcome-soc{
+  padding-left: 70px;
+}
+.welcome{
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+.social-links-footer{
+  margin-left: 0;
+}
 /* ---------------------PORTFOLIO----------------- */
 /* filter */
 
