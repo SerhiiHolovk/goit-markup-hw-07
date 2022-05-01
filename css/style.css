@@ -415,9 +415,11 @@ margin-bottom: 50px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--hover-focus-color);
   fill: var(--hover-focus-color);
+  outline-color: var(--hover-focus-color);
 }
 
 /* ---------------------FOOTER----------------- */
@@ -561,7 +563,7 @@ margin-bottom: 50px;
 }
 .work-link:hover,
 .work-link:focus {
-  outline: none;
+  /* outline: none; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
