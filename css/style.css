@@ -702,8 +702,8 @@ margin-bottom: 50px;
   padding: 63px 24px;
   top: 0;
   left: 0;
-  /* opacity: 0; */
-  transform: translatey(100%);
+  
+  transform: translateY(100%);
   transition-property: transform;
   transition-duration: var(--time);
   transition-timing-function: var(--timing-function);
@@ -715,7 +715,6 @@ margin-bottom: 50px;
   background-color: rgba(33, 150, 243, 0.9);
 }
 .work-item:hover .portfolio-description{
-  
   transform: translatey(0); 
 }
 .work-item:focus .portfolio-description{
