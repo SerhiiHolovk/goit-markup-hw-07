@@ -714,8 +714,8 @@ margin-bottom: 50px;
   color: #FFF;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.work-item:hover .portfolio-description,      
-.work-item:focus .portfolio-description{
+.work-link:hover .portfolio-description,      
+.work-link:focus .portfolio-description{
   transform: translatey(0); 
 }
 
