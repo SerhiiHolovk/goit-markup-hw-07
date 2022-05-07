@@ -117,13 +117,10 @@ ul {
 
   transition-property: color;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);
+  transition-duration: var(--time);
 }
 .nav-link:hover,
 .nav-link:focus {
-  transition-property: color;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
   color: var(--hover-focus-color);
 }
 .nav-list-item{
@@ -140,7 +137,7 @@ ul {
   width: 100%;
   height: 5px;
   display: block;
-
+  border-radius: 2px;
   background-color: var(--hover-focus-color);
   
 }
@@ -149,7 +146,6 @@ ul {
   display: flex;
   margin-left: auto;
   align-items: center;
-  /* vertical-align: middle; */
   justify-content: baseline;
 }
 .contacts-list {
@@ -175,15 +171,12 @@ ul {
   align-items: center;
   transition-property: color;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);  
+  transition-duration: var(--time);  
 }
 
 .link-mail:hover,
 .link-mail:focus {
   color: var(--hover-focus-color);
-  transition-property: color;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
 }
 
 
@@ -202,6 +195,10 @@ ul {
   display: flex;
   justify-content: baseline;
   align-items: center;
+
+  transition-property: color;
+  transition-timing-function: var(--timing-function);
+  transition-duration: var(--time); 
 }
 
 .link-tel:hover,
@@ -272,9 +269,7 @@ ul {
   z-index: 10;
   /* width: 1600px; */
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--time), visibility var(--time);
-  transition-timing-function: var(--timing-function);
-  
+  transition: opacity var(--time)  var(--timing-function), visibility var(--time)  var(--timing-function);
 }
 .modal{
   position: absolute;
@@ -307,6 +302,7 @@ ul {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .backdrop.is-hidden{
   opacity: 0;
@@ -468,15 +464,12 @@ ul {
   fill: #afb1b8;
   transition-property: background-color, fill;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);
+  transition-duration: var(--time);
 }
 .team-soc-icon:hover,
 .team-soc-icon:focus {
   fill: #fff;
   background-color: var(--hover-focus-color);
-  transition-property: background-color, fill;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
 }
 .social-links {
   display: flex;
@@ -524,17 +517,13 @@ margin-bottom: 50px;
   border-radius: 4px;
   transition-property: border-color, background-color, fill;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);
+  transition-duration: var(--time);
 }
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--hover-focus-color);
   fill: var(--hover-focus-color);
   outline-color: var(--hover-focus-color);
-
-  transition-property: border-color, background-color, fill;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
 }
 
 /* ---------------------FOOTER----------------- */
@@ -584,14 +573,11 @@ margin-bottom: 50px;
 
   transition-property: color;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);
+  transition-duration: var(--time);
 }
 .link-contacts-footer:hover,
 .link-contacts-footer:focus {
   color: var(--hover-focus-color);
-  transition-property: color;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
 }
 .welcome-soc {
   margin-left: 70px;
@@ -617,16 +603,12 @@ margin-bottom: 50px;
 
   transition-property: background-color, fill;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);
+  transition-duration: var(--time);
 }
 .soc-icon-footer:hover,
 .soc-icon-footer:focus {
   fill: #fff;
   background-color: var(--hover-focus-color);
-  
-  transition-property: background-color, fill;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
 }
 .social-links-footer {
   margin-left: 0;
@@ -657,12 +639,11 @@ margin-bottom: 50px;
   border: 0;
   border-radius: 4px;
 
-  transition-property: 
-    background-color, 
-    color, 
-    box-shadow;
+  transition-property: background-color, 
+                       color, 
+                       box-shadow;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);
+  transition-duration: var(--time);
 }
 .filter-item {
   margin-right: 8px;
@@ -677,12 +658,6 @@ margin-bottom: 50px;
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  
-  transition-property:  background-color, 
-                        color, 
-                        box-shadow;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
 }
 
 /* ---------------------WORKS----------------- */
@@ -703,17 +678,15 @@ margin-bottom: 50px;
   display: block;
   transition-property: box-shadow;
   transition-timing-function: var(--timing-function);
-  transition: var(--time);
+  transition-duration: var(--time);
 }
 .work-link:hover,
 .work-link:focus {
-  /* outline: none; */
+  
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   
-  transition-property: box-shadow;
-  transition-timing-function: var(--timing-function);
-  transition: var(--time);
+
 }
 .work-img {
   position: relative;
@@ -729,21 +702,24 @@ margin-bottom: 50px;
   padding: 63px 24px;
   top: 0;
   left: 0;
+  /* opacity: 0; */
   transform: translatey(100%);
-  opacity: 0;
-
+  transition-property: transform;
+  transition-duration: var(--time);
+  transition-timing-function: var(--timing-function);
+ 
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #FFF;
-  background-color: rgba(33, 150, 243, 0.9);;
+  background-color: rgba(33, 150, 243, 0.9);
 }
 .work-item:hover .portfolio-description{
-  opacity: 1;
-  transform: translatey(0);
-  transition-property: transform;
-  transition: var(--time);
-  transition-timing-function: var(--timing-function);
+  
+  transform: translatey(0); 
+}
+.work-item:focus .portfolio-description{
+  transform: translatey(0); 
 }
 
 .work-description {
