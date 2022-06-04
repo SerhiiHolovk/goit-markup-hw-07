@@ -12,27 +12,29 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <title>Портфолио</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <a class="logo" href="">Web<span class="logo-studio-header">Studio</span> </a>
+      <a class="logo" href="">Web<span class="logo--black">Studio</span> </a>
       <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a class="nav-link" href="./index.html">Студия</a>            
+        <ul class="navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation__link" href="./index.html">Студия</a>              
           </li>
-          <li class="nav-list-item">
-            <a class="nav-link underline" href="./portfolio.html">Портфолио</a>
+          <li class="navigation-list__item underline">
+            <a class="navigation__link" href="./portfolio.html">Портфолио</a>                
           </li>
-          <li class="nav-list-item"><a class="nav-link" href="">Контакты</a></li>
+          <li class="navigation-list__item">
+            <a class="navigation__link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
       <ul class="contacts">
         <li class="contacts-list">
-          <a class="link-mail" href="mailto:info@devstudio.com">
+          <a class="contacts-list__mail" href="mailto:info@devstudio.com">
             <svg class="contacts-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
@@ -40,7 +42,7 @@
             >
         </li>
         <li class="contacts-list">
-          <a class="link-tel" href="tel:+380961111111">
+          <a class="contacts-list__tel" href="tel:+380961111111">
             <svg class="contacts-icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a>
@@ -56,18 +58,18 @@
         <h1 class="visually-hidden">Portfolio</h1>
         <!--Filtres-->
         <ul class="filter list">
-          <li class="filter-item"><button class="button">Все</button></li>
-          <li class="filter-item"><button class="button">Веб-сайты</button></li>
-          <li class="filter-item"><button class="button">Приложения</button></li>
-          <li class="filter-item"><button class="button">Дизайн</button></li>
-          <li class="filter-item"><button class="button">Маркетинг</button></li>
+          <li class="filter__item"><button class="button">Все</button></li>
+          <li class="filter__item"><button class="button">Веб-сайты</button></li>
+          <li class="filter__item"><button class="button">Приложения</button></li>
+          <li class="filter__item"><button class="button">Дизайн</button></li>
+          <li class="filter__item"><button class="button">Маркетинг</button></li>
         </ul>
      
       <!--Works-->
       
-        <ul class="works-list list">
-          <li class="work-item">
-            <a href="" class="work-link">
+        <ul class="works list">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work1.jpg" alt="Ноутбук с открытым веб-сайтом Технокряк" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -78,8 +80,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work2.jpg" alt="Постер с двумя баскетболистами" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -90,8 +92,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work3.jpg" alt="Рыба на белом фоне" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -102,8 +104,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work4.jpg" alt="Наушники" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -114,8 +116,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work5.jpg" alt="Коричневая коробка в тени белой большой" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -126,8 +128,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work6.jpg" alt="Монитор с изображением карты мира в черном фоне" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -138,8 +140,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work7.jpg" alt="Открытый журнал" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -150,8 +152,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work8.jpg" alt="Белая бирка Lab el tag на белом фоне" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -162,8 +164,8 @@
               </div>
             </a>
           </li>
-          <li class="work-item">
-            <a href="" class="work-link">
+          <li class="works__item">
+            <a href="" class="works__link">
               <div class="work-img">
                 <img class="work-img" src="./images/work9.jpg" alt="Ноутбук с сайтом Growing" />
                 <p class="portfolio-description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -184,7 +186,7 @@
       <div class="container-footer">
         <div class="Logo-adress">
           <a href="" class="footer-logo"
-            >Web<span class="logo-studio-footer">Studio</span>
+            >Web<span class="logo--white">Studio</span>
           </a>
           <address class="address">
             <ul class="footer-address">
@@ -241,17 +243,17 @@
             </li>
           </ul>
         </div>
-        <div class="follow">
-          <p class="follow-title">Подпишитесь на рассылку</p>
-          <div class="follow-field">
-            <input class="follow-email" type="e-mail" placeholder="E-mail">
+        <form class="follow">
+          <p class="follow__title">Подпишитесь на рассылку</p>
+          <div class="follow__field">
+            <input class="follow__email" type="e-mail" placeholder="E-mail">
             <button class="btn-follow">Подписаться
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </div>    
-        </div>
+        </form>
       </div>  
     </div>
   </footer>
