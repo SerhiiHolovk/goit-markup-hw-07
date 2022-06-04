@@ -1,0 +1,38 @@
+body {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .list {
+    list-style-type: none;
+  }
+  img {
+    display: block;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  input{
+    background-color: #fff;
+    outline: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  
+  
+  
