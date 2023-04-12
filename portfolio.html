@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+  <link rel="js" href="/mobile-menu.js" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <title>Портфоліо</title>
@@ -19,6 +20,11 @@
   <header class="header">
     <div class="container">
       <a class="logo" href="">WEB<span class="logo--black">STUDIO</span> </a>
+      <button class="menu-open-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-menu" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
       <nav>
         <ul class="navigation-list">
           <li class="navigation-list__item">
@@ -42,6 +48,55 @@
           <a class="contacts-list__tel" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
         </li>
       </ul>
+    </div>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="close-btn js-close-menu">
+        <svg width="24" height="12">
+          <use href="./images/icons.svg#icon-closebtn"></use>
+        </svg>
+      </button>
+      <ul class="menu-list">
+        <li><a class="link" href="./index.html">Studio</a></li>
+        <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="link" href="">Contacts</a></li>
+      </ul>
+      <div class="menu-contacts">
+        <ul class="menu-contacts-list">
+          <li><a class="tel" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a></li>
+          <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu-social-links">
+          <li class="social-list">
+            <a href="https://instagram.com" class="team-soc-icon">
+              <svg class="social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="https://twitter.com/?lang=uk" class="team-soc-icon">
+              <svg class="social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="https://facebook.com" class="team-soc-icon">
+              <svg class="social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="https://www.linkedin.com" class="team-soc-icon">
+              <svg class="social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    
     </div>
   </header>
 
@@ -232,6 +287,10 @@
       <!-- </div> -->
     </div>
   </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
