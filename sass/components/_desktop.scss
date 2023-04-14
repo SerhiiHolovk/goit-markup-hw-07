@@ -17,11 +17,10 @@
         .contacts {
             display: flex;
             flex-direction: row;
-            margin-left: auto;
             align-items: center;
             
         }
-        .contacts-list__mail{
+        .contacts-list .contacts-list__mail{
             margin-right: 40px;
         }
 /*---------------section-----------*/
@@ -44,7 +43,7 @@
     .hero{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-        url('/images/hero-desktop@2x.jpg');
+        url('../images/hero-desktop@2x.jpg');
     }
 }
 .hero__title {
@@ -90,12 +89,13 @@
 }
 .features-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 500;
     text-transform: capitalize;    
 }
-.features-text {          
+.features-text {    
+    font-weight: 400;      
     font-size: 16px;
     line-height: 1.5;    
     letter-spacing: 0.02em;
@@ -104,10 +104,7 @@
 
 
 .our-works-section .container{
-    
-
     padding-bottom: 120px;
-    
 }
 
 .our-works-title {
@@ -117,6 +114,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
+    text-transform: capitalize;
 }
 
 .our-works-list {
