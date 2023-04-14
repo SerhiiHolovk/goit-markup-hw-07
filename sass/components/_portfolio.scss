@@ -26,6 +26,7 @@
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
+    color: #4D5AE5;
     cursor: pointer;
     padding: 12px 24px;
     border: 1px solid #E7E9FC;
@@ -40,10 +41,11 @@
     &:hover,
     &:focus {
     background-color: var(--hover-focus-color);
-    color: #fff;
-  
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    color: #fff;  
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-color: transparent;
   }
 }
 
@@ -54,26 +56,8 @@
 .works {
   display: flex;
   flex-wrap: wrap;  
+  gap: 48px 24px;
   
-}
-
-.works__item {
-  background: #ffffff;
-  width: calc(100% / 3 - 24px);
-  margin-bottom: 48px;
-  margin-right: 24px;
-  &:nth-child(3n){
-    margin-right: 0;
-  }
-  &:nth-child(7){
-    margin-bottom: 0;
-  }
-    &:nth-child(8) {
-      margin-bottom: 0;
-    }
-        &:nth-child(9) {
-          margin-bottom: 0;
-        }
 }
 
  .works__link {
@@ -114,7 +98,7 @@
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #FFF;
-   background-color: rgba(33, 150, 243, 0.9);
+   background-color: var(--portfolio-backgroundcolor-description);
 
    .works__link:hover &,
    .works__link:focus & {

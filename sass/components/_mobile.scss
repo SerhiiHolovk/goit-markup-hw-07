@@ -451,16 +451,12 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 72px 16px;
 }
 
 .clients-item {
-  width: 168px;
-  height: 88px;
-  margin-right: 24px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  width: 190px;
+  height: 88px;  
 }
 
 .clients-link {
@@ -537,7 +533,7 @@
   &:hover,
   &:focus {
     fill: #fff;
-    background-color: var(--hover-focus-color);
+    background-color: var(--footer-social-hover);
   }
 }
 
@@ -718,7 +714,7 @@
     }
 }
 
-.menu-contacts-list .tel{
+ .tel a{
   display: block;
   font-weight: 700;
   font-size: 36px;
@@ -728,7 +724,7 @@
   color: #4D5AE5;
   margin-bottom: 40px;
 }
-.menu-contacts-list .mail{
+.mail a{
   display: block;
   font-weight: 500;
     font-size: 20px;
@@ -806,30 +802,13 @@
   //   padding: 0px 16px;
   //   margin: 0 auto;
   // }
-  .clients-list {
-    flex-wrap: wrap;
-    
-       
-  }
   
-  .clients-item {
-    flex-basis: calc(100% / 2 - 16px);
-    margin-right: 16px;
-    margin-bottom: 72px;
-    &:nth-child(2n){
-      margin-right: 0;
-    }
-    &:nth-child(5n) {
-        margin-bottom: 0;
-      }
-
-    &:last-child{
-      margin-bottom: 0;
-    }
-  }
-  /*---------------------Footer------------------*/
+   /*---------------------Footer------------------*/
   .logo-adress {
     margin-bottom: 72px;
+    width: 268px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .social-title {
     text-align: center;

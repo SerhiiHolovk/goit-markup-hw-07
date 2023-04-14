@@ -11,18 +11,20 @@
         flex-direction: row;
         align-items: center;
     }
-        .navigation-list{
-            margin-right: 0;
-        }
-        .contacts {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            
-        }
-        .contacts-list .contacts-list__mail{
-            margin-right: 40px;
-        }
+    .navigation-list{
+        margin-right: 0;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        
+    }
+    .contacts-list a{
+        font-size: 16px;
+    }
+      
 /*---------------section-----------*/
 .section {
     padding-top: 120px;
@@ -142,17 +144,8 @@
         margin-right: 0;
     }
 }
-/*----------------customers------*/
 .clients-list {
-    display: flex;
-}
-
-.clients-item {
-    margin-right: 24px;
-
-    &:last-child {
-        margin-right: 0;
-    }
+    gap: 0 24px;
 }
 /*---------------footer------------*/
 .footer .container {

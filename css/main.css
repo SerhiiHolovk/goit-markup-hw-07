@@ -46,11 +46,13 @@ ul {
   --logo-studiocolor: #2E2F42;
   --hover-focus-color: #404BBF;
   --footer-background: #2E2F42;
+  --footer-social-hover: #31D0AA;
   --link-contacts-color: #434455;
   --description-text: #434455;
   --button-order: #404BBF;
   --ourteam-background: #F4F4FD;
   --backgroundcolor-features: #F4F4FD;
+  --portfolio-backgroundcolor-description:#4D5AE5;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
 }
@@ -487,15 +489,12 @@ ul {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 72px 16px;
 }
 
 .clients-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
-  margin-right: 24px;
-}
-.clients-item:last-child {
-  margin-right: 0;
 }
 
 .clients-link {
@@ -566,7 +565,7 @@ ul {
 }
 .soc-icon-footer:hover, .soc-icon-footer:focus {
   fill: #fff;
-  background-color: var(--hover-focus-color);
+  background-color: var(--footer-social-hover);
 }
 
 .social-list-footer {
@@ -735,7 +734,7 @@ ul {
   .list-item:last-child {
     margin-bottom: 0;
   }
-  .menu-contacts-list .tel {
+  .tel a {
     display: block;
     font-weight: 700;
     font-size: 36px;
@@ -745,7 +744,7 @@ ul {
     color: #4D5AE5;
     margin-bottom: 40px;
   }
-  .menu-contacts-list .mail {
+  .mail a {
     display: block;
     font-weight: 500;
     font-size: 20px;
@@ -812,26 +811,12 @@ ul {
     margin-bottom: 0;
   }
   /*---------Clients----------*/
-  .clients-list {
-    flex-wrap: wrap;
-  }
-  .clients-item {
-    flex-basis: calc(50% - 16px);
-    margin-right: 16px;
-    margin-bottom: 72px;
-  }
-  .clients-item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .clients-item:nth-child(5n) {
-    margin-bottom: 0;
-  }
-  .clients-item:last-child {
-    margin-bottom: 0;
-  }
   /*---------------------Footer------------------*/
   .logo-adress {
     margin-bottom: 72px;
+    width: 268px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .social-title {
     text-align: center;
@@ -867,18 +852,15 @@ ul {
   .navigation-list__item:last-child {
     margin-right: 0;
   }
-  .navigation-list__item {
-    position: relative;
-    padding-bottom: 24px;
-    padding-top: 24px;
-  }
   .navigation__link {
+    display: block;
+    position: relative;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-color);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     transition-property: color;
     transition-timing-function: var(--timing-function);
     transition-duration: var(--time);
@@ -886,11 +868,11 @@ ul {
   .navigation__link:hover, .navigation__link:focus {
     color: var(--hover-focus-color);
   }
-  .underline::after {
+  .navigation__link.current::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 4px;
     display: block;
@@ -912,6 +894,9 @@ ul {
   }
   .contacts-list a:hover, .contacts-list a:focus {
     color: var(--hover-focus-color);
+  }
+  .clients-item {
+    width: 168px;
   }
   .footer .container {
     box-sizing: border-box;
@@ -1025,8 +1010,8 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .our-team-section .container {
     box-sizing: border-box;
-    width: 552px;
-    padding: 0px;
+    width: 582px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 }
@@ -1034,41 +1019,20 @@ ul {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -24px;
-    margin-top: -64px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .team-item {
-    flex-basis: calc(50% - 24px);
-    margin-left: 24px;
-    margin-top: 64px;
+    gap: 64px 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .pas-section .container {
     box-sizing: border-box;
-    width: 552px;
-    padding: 0px;
+    width: 582px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .clients-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -24px;
-    margin-bottom: -72px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .clients-item {
-    flex-basis: calc(33.3333333333% - 24px);
-    margin-right: 24px;
-    margin-bottom: 72px;
-  }
-  .clients-item:last-child {
-    margin-right: 24px;
+    gap: 72px 24px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1090,9 +1054,10 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 40px;
   }
-  .contacts-list .contacts-list__mail {
-    margin-right: 40px;
+  .contacts-list a {
+    font-size: 16px;
   }
   /*---------------section-----------*/
   .section {
@@ -1110,7 +1075,6 @@ ul {
   /*---------------features---------*/
   /*----------------Our works--------------*/
   /*---------------our team------*/
-  /*----------------customers------*/
   /*---------------footer------------*/
 }
 @media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 2dppx) {
@@ -1226,15 +1190,7 @@ ul {
 }
 @media screen and (min-width: 1158px) {
   .clients-list {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .clients-item {
-    margin-right: 24px;
-  }
-  .clients-item:last-child {
-    margin-right: 0;
+    gap: 0 24px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1289,6 +1245,7 @@ ul {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
+  color: #4D5AE5;
   cursor: pointer;
   padding: 12px 24px;
   border: 1px solid #E7E9FC;
@@ -1301,6 +1258,7 @@ ul {
   background-color: var(--hover-focus-color);
   color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
 }
 
 .works {
@@ -1310,25 +1268,7 @@ ul {
 .works {
   display: flex;
   flex-wrap: wrap;
-}
-
-.works__item {
-  background: #ffffff;
-  width: calc(33.3333333333% - 24px);
-  margin-bottom: 48px;
-  margin-right: 24px;
-}
-.works__item:nth-child(3n) {
-  margin-right: 0;
-}
-.works__item:nth-child(7) {
-  margin-bottom: 0;
-}
-.works__item:nth-child(8) {
-  margin-bottom: 0;
-}
-.works__item:nth-child(9) {
-  margin-bottom: 0;
+  gap: 48px 24px;
 }
 
 .works__link {
@@ -1363,7 +1303,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #FFF;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--portfolio-backgroundcolor-description);
 }
 .works__link:hover .portfolio-description, .works__link:focus .portfolio-description {
   transform: translatey(0);
